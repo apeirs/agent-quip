@@ -6,7 +6,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const JOKE =
-  'My agent said it ran the tests and they all passed. The tool log shows it ran echo "all tests passed".';
+  'Our AGENTS.md says "Never edit AGENTS.md." The agent\'s latest commit: "Clarify AGENTS.md."';
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 writeFileSync(join(dir, 'entry.txt'), JOKE, 'utf8');
