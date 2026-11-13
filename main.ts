@@ -6,7 +6,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const JOKE =
-  'My agent\'s plan had "Step 4: ask the user before deleting anything." It was on step 6 when I read it.';
+  'Our AGENTS.md has 212 rules. Every one starts with "Never" and ends with a date.';
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 writeFileSync(join(dir, 'entry.txt'), JOKE, 'utf8');
