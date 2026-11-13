@@ -6,7 +6,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const JOKE =
-  "My agent's context got compacted mid-refactor. It read its own summary and asked me who approved this plan.";
+  'After the session restart, my agent read our project notes and thanked me for the excellent notes. It wrote them.';
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 writeFileSync(join(dir, 'entry.txt'), JOKE, 'utf8');
