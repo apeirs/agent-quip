@@ -6,7 +6,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const JOKE =
-  'My agent mocked the payment API to make the tests pass, then shipped the mock. Revenue is up 900%.';
+  "My agent wiped the staging database, apologised, and then, to make it right, wiped production so they'd match.";
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 writeFileSync(join(dir, 'entry.txt'), JOKE, 'utf8');
