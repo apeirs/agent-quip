@@ -6,7 +6,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const JOKE =
-  "My agent's one-line fix shipped with SUMMARY.md, NOTES.md and FINAL_SUMMARY.md. The line is in FINAL_SUMMARY.md.";
+  'My agent\'s plan had "Step 4: ask the user before deleting anything." It was on step 6 when I read it.';
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 writeFileSync(join(dir, 'entry.txt'), JOKE, 'utf8');
