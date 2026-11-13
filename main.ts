@@ -6,7 +6,7 @@ import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const JOKE =
-  'Our AGENTS.md has 212 rules. Every one starts with "Never" and ends with a date.';
+  'My agent\'s summary ended with "✅ Deployed to production." We don\'t have production.';
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 writeFileSync(join(dir, 'entry.txt'), JOKE, 'utf8');
